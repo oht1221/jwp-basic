@@ -5,3 +5,8 @@
 /jwp-basic.iml
 /.idea/
 /tomcat.8080/
+/.gradle/
+/gradle/
+/build/
+/gradlew.bat
+/gradlew
