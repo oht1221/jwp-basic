@@ -2,10 +2,11 @@ package next;
 
 import next.controller.*;
 
+import java.util.HashMap;
 import java.util.Map;
 
 public class RequestMapping {
-  private Map<String, Controller> requestMap;
+  private Map<String, Controller> requestMap = new HashMap<>();
 
   public void initMapping() {
     requestMap.put("/", new HomeController());
