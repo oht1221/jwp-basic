@@ -7,13 +7,12 @@ import next.dao.UserDao;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import core.db.DataBase;
 import core.mvc.Controller;
 import next.model.User;
 
 public class UpdateUserController implements Controller {
     private static final Logger log = LoggerFactory.getLogger(UpdateUserController.class);
-    private UserDao userDao;
+    private static final UserDao userDao = new UserDao();
 
     @Override
     public String execute(HttpServletRequest req, HttpServletResponse resp) throws Exception {

@@ -9,7 +9,7 @@ import next.dao.UserDao;
 
 public class ListUserController implements Controller {
 
-    private UserDao userDao;
+    private static final UserDao userDao = new UserDao();
 
     @Override
     public String execute(HttpServletRequest req, HttpServletResponse resp) throws Exception {
